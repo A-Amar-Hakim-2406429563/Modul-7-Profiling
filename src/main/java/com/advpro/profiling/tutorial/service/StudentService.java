@@ -42,11 +42,17 @@ public class StudentService {
 
     public String joinStudentNames() {
         List<Student> students = studentRepository.findAll();
-        String result = "";
+        StringBuilder result = new StringBuilder();
+
         for (Student student : students) {
-            result += student.getName() + ", ";
+            result.append(student.getName()).append(", ");
         }
-        return result.substring(0, result.length() - 2);
+
+        if (result.length() > 0) {
+            result.setLength(result.length() - 2); // hapus ", "
+        }
+
+        return result.toString();
     }
 }
 
