@@ -3,7 +3,7 @@
 
 ### Endpoint /all-student
 #### 1. JMeter GUI
-![all-student-jmeter](screenshots/all-student-name-cli.png)
+![all-student-jmeter](screenshots/all-student-jmeter.png)
 #### 2. CLI
 ![all-student-cli](screenshots/all-student-cli.png)
 
