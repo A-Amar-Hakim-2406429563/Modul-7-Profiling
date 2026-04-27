@@ -34,6 +34,11 @@ Setelah optimasi:
 - Menggunakan `JOIN FETCH`
 - Semua data diambil dalam 1 query
 
+### Screenshot `/all-student` Optimized
+![all-student-jmeter-optimized](screenshots/optimized/all-student-jmeter_optimized.png)
+
+![all-student-cli-optimized](screenshots/optimized/all-student-cli_optimized.png)
+
 ---
 
 ### 2. `/all-student-name`
@@ -44,6 +49,11 @@ Sebelumnya:
 Setelah optimasi:
 - Menggunakan `StringBuilder`
 - Lebih hemat memory dan lebih cepat
+
+### Screenshot `/all-student-name` Optimized
+![all-student-name-jmeter-optimized](screenshots/optimized/all-student-name-jmeter_optimized.png)
+
+![all-student-name-cli-optimized](screenshots/optimized/all-student-name-cli_optimized.png)
 
 ---
 
@@ -58,6 +68,13 @@ Setelah optimasi:
 findTopByOrderByGpaDesc()
 ```
 - Delegasi ke database (lebih optimal)
+
+### Screenshot `/highest-gpa` Optimized
+![highest-gpa-jmeter-optimized](screenshots/optimized/highest-gpa-jmeter_optimized.png)
+
+![highest-gpa-cli-optimized](screenshots/optimized/highest-gpa-cli_optimized.png)
+
+---
 
 ## Kesimpulan (Conclusion)
 Setelah dilakukan optimasi dan pengujian ulang menggunakan JMeter, terlihat adanya peningkatan performa pada semua endpoint.
